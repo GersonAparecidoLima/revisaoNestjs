@@ -24,7 +24,7 @@ export class UsuarioRepository {
         return possivelUsuario !== undefined;
     }
 
-    private buscaPorId(id: string) {
+    public buscaPorId(id: string) {
         const possivelUsuario = this.usuarios.find(
             usuarioSalvo => usuarioSalvo.id === id
         );
